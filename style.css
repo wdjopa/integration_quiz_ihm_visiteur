@@ -2,6 +2,17 @@ body{
     font-family: 'Caveat Brush', cursive;
 }
 
+a {
+    color: #34B4E3;
+}
+
+a:hover{
+    color: #34B4E3;
+}
+
+.underline{
+    text-decoration: underline;
+}
 .loading_page{
     display: flex;
     justify-content: center;
@@ -16,40 +27,40 @@ body{
     
 }
 .loading_page span{
-    animation: pulse 2s infinite;
+    animation: pulse 1s infinite;
     display: inline-block;
     text-shadow: 1px 1px 3px black;
     border-bottom: 5px solid #34B4E3;
 }
-/* 
+
 @-webkit-keyframes pulse {
     0% {
-        -webkit-text-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+        -webkit-text-shadow: 0 0 0 rgba(44, 132, 204, 0.4);
     }
 
     70% {
-        -webkit-text-shadow: 0 0 10px rgba(204, 169, 44, 0);
+        -webkit-text-shadow: 0 0 10px rgba(44, 132, 204, 0);
     }
 
     100% {
-        -webkit-text-shadow: 0 0 0 rgba(204, 169, 44, 0);
+        -webkit-text-shadow: 0 0 0 rgba(44, 132, 204, 0);
     }
-} */
+} 
 
 @keyframes pulse {
     0% {
-        -moz-text-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
-        text-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+        -moz-text-shadow: 0 0 0 rgba(44, 132, 204, 0.4);
+        text-shadow: 0 0 0 rgba(44, 132, 204, 0.64);
     }
 
     70% {
-        -moz-text-shadow: 0 0 10px rgba(204, 169, 44, 0);
-        text-shadow: 0 0 100px rgba(40, 129, 247, 0.623);
+        -moz-text-shadow: 0 0 10px rgba(44, 132, 204, 0);
+        text-shadow: 0 0 100px rgba(11, 113, 247, 0);
     }
 
     100% {
-        -moz-text-shadow: 0 0 0 rgba(204, 169, 44, 0);
-        text-shadow: 0 0 0 rgba(204, 169, 44, 0);
+        -moz-text-shadow: 0 0 0 rgba(44, 132, 204, 0);
+        text-shadow: 0 0 0 rgba(44, 132, 204, 0);
     }
 }
 
@@ -74,11 +85,40 @@ body{
 header{
     height: 20vh;
 }
-section{
+@media (min-width: 1200px) {
+.home{
     width: 20vw;
     height: 60vh;
+}
+}
+section{
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
+}
+
+
+
+/**
+REECRITURE CSS BOOTSTRAP
+*/
+@media (min-width: 1200px) {
+
+    .container,.container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 45vw;
+    }
+}
+form label{
+    color: #34B4E3;
+    padding-left: 1rem;
+    font-size: 1.52rem;
+}
+.form-control{
+    border: none;
+    border-bottom: 2.5px solid #34B4E3;
+
 }
