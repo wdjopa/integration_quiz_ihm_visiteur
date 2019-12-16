@@ -16,11 +16,17 @@
 <body>
     <div class="container content">
         <header class="logo text-center">
-            <a href="../    index.html">Quiz</a>
+            <a href="../index.html">Quiz</a>
             <h3>Inscription</h3>
         </header>
         <section class="container pt-5">
-            <form class="mt-5">
+            <form class="mt-5" id="inscription_form">
+                <div class="col-md-12">
+                    <div style="display: none;" class="alert alert-danger">Cette adresse email est déjà utilisée ...
+                    </div>
+                    <div style="display: none;" class="alert alert-success">Inscription en cours, vérifiez votre boite mail ...
+                    </div>
+                </div>
                 <div class="row mb-5">
                     <div class="col-md-12">
                         <label for="nom">Nom</label>
@@ -47,8 +53,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <label for="cgu"><input type="checkbox" name="cgu" required id="cgu"> J'accepte les <a
-                                href="" class="underline">conditions d'utilisation</a>.
+                        <label for="cgu"><input type="checkbox" name="cgu" required id="cgu"> J'accepte les <a href=""
+                                class="underline">conditions d'utilisation</a>.
                         </label>
                         <!-- En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans l'unique cadre du jeu afin de vous faire part des statistiques de quiz. -->
                     </div>
@@ -70,7 +76,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 
 </body>
 

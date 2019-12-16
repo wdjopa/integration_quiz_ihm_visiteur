@@ -20,7 +20,11 @@
             <h3>Connexion</h3>
         </header>
         <section class="container pt-5">
-            <form class="mt-5">
+            <form class="mt-5" id="connexion_form">
+                    <div class="col-md-12">
+                        <div  style="display: none;" class="alert alert-danger">Nom d'utilisateur ou mot de passe incorrect...</div>
+                        <div  style="display: none;" class="alert alert-success">Connexion en cours, bienvenue admin ...</div>
+                    </div>
                 <div class="row mb-5">
                     <div class="col-md-12">
                         <label for="email">Votre adresse mail</label>
@@ -50,8 +54,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-
+    <script src="../script.js"></script>
 </body>
 
 </html>
